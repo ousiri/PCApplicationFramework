@@ -1,0 +1,30 @@
+extends ../layout/layout.jade
+block headScript
+	script(src="../../widget/common/allowAnimation.inline.coffee?__inline")
+
+block title
+	title Index - example
+
+block navbar
+	+navbar('Index')
+
+block content
+	.main-container
+		h2 Here's the important thing!!!
+
+		.gallery-container.clearfix
+			ul.gallery
+				li.feature.easy
+				li.feature.fast
+				li.feature.free
+				li.feature.interactive
+				li.feature.precise
+
+		include ../../widget/common/footer
+
+block script
+	script(src='/static/mod.js?__inline')
+	script(src='/static/mod.config.js?__inline')
+	//RESOURCEMAP_PLACEHOLDER
+	//SCRIPT_PLACEHOLDER
+	script(src='index.inline.coffee?__inline')

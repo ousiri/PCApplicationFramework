@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="description", content="description")
+		meta(name="author", content="ousiri")
+		meta(name="keywords", content="mobile application framework, ousiri")
+		meta(name="renderer",content="webkit")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="viewport",content="width=device-width, initial-scale=1, user-scalable=no")
+
+		block title
+			title Mobile Application Framework - ousiri
+		block headScript
+		//STYLE_PLACEHOLDER
+		block style
+	body
+		mixin navbar(title)
+			.navbar
+				.inner
+					.navbar-header
+						h1.title= title
+		block navbar
+		block content
+		block script

@@ -1,0 +1,1 @@
+<p>This content is from template: <%=it.content%></p>
